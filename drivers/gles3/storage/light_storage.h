@@ -344,6 +344,7 @@ public:
 	virtual void light_directional_set_sky_mode(RID p_light, RSE::LightDirectionalSkyMode p_mode) override;
 	virtual RSE::LightDirectionalSkyMode light_directional_get_sky_mode(RID p_light) const override;
 
+<<<<<<< HEAD
 	virtual void light_area_set_size(RID p_light, const Vector2 &p_size) override;
 	virtual Vector2 light_area_get_size(RID p_light) const override;
 
@@ -351,6 +352,10 @@ public:
 	virtual bool light_area_get_normalize_energy(RID p_light) const override;
 	virtual void light_area_set_texture(RID p_light, RID p_texture) override;
 	virtual RID light_area_get_texture(RID p_light) const override;
+=======
+	virtual void light_directional_set_screen_space_contact_shadows(RID p_light, bool p_enable) override {}
+	virtual bool light_directional_get_screen_space_contact_shadows(RID p_light) const override { return false; }
+>>>>>>> pr/118045
 
 	virtual RSE::LightDirectionalShadowMode light_directional_get_shadow_mode(RID p_light) override;
 	virtual RSE::LightOmniShadowMode light_omni_get_shadow_mode(RID p_light) override;
